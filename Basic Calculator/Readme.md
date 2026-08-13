@@ -22,8 +22,8 @@ A lightweight Python command-line utility for executing basic arithmetic operati
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/simple-calculator.git](https://github.com/your-username/simple-calculator.git)
-   cd simple-calculator
+   git clone [https://github.com/srichandratech-del/Personal-Projects/blob/main/Basic%20Calculator/Simple%20Calculator.py](https://github.com/srichandratech-del/Personal-Projects/blob/main/Basic%20Calculator/Simple%20Calculator.py)
+   cd Simple Calculator
    ```
 
 ## 💻 Usage Example
@@ -31,9 +31,8 @@ A lightweight Python command-line utility for executing basic arithmetic operati
 Run the script:
 
 ```bash
-python calculator.py
+python Simple Calculator.py
 ```
-Enter First Number: 25
-Enter Second Number: 5
-Enter operation (add/sub/mul/div): /
-5.0
+1. Enter First Number: 25
+2. Enter Second Number: 5
+3. Enter operation (add/sub/mul/div):
