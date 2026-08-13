@@ -15,18 +15,6 @@ A terminal-based tally counter utility designed to keep track of incremental or 
 * 🛑 **Exit**: Safely terminate program session[cite: 5].
 
 ---
-
-## 🚀 How to Run
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/srichandratech-del/tally-counter.git](https://github.com/srichandratech-del/tally-counter.git)
-   cd tally-counter
-Execute script:
- ```Bash
-  python tally_counter.py
-```
----
 **💻 Interface Preview**
 
 Please choose an option:
@@ -34,5 +22,6 @@ Please choose an option:
   2. Decrement Count
   3. Reset Count
   4. Exit
+
 Enter your choice (1-4): 1
 Count incremented. Current count: 1
