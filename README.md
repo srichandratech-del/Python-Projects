@@ -31,10 +31,66 @@ To run any of these projects locally:
 
 ---
 
-## ⚡ How to Run Any Project
+# Personal Projects
 
-1. **Clone the overall repository:**
-   ```bash
-   git clone [https://github.com/srichandratech-del/Personal-Projects.git](https://github.com/srichandratech-del/Personal-Projects.git)
-   cd Personal-Projects
-   ```
+## ⚡ How to Clone & Run
+
+You only need to clone this repository **once** to get all projects on your computer.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/srichandratech-del/Personal-Projects.git
+```
+
+### 2. Navigate into the Main Project Folder
+
+```bash
+cd Personal-Projects
+```
+
+### 3. Navigate into a Specific Project and Run the Script
+
+#### Simple Calculator
+
+```bash
+cd "basic calculator"
+python Basic_Calculator.py
+```
+
+#### Project: Icarus
+
+```bash
+cd "icarus"
+python ICARUS.py
+```
+
+#### Password Manager
+
+```bash
+cd "password manager"
+python Password.py
+```
+
+#### Student Marks Calculator
+
+```bash
+cd "student marks calculator"
+python student_marks_calculator.py
+```
+
+#### Tally Counter
+
+```bash
+cd "tally counter"
+python "Tally Count.py"
+```
+
+## 🎯 Learning Milestones
+
+Through constructing these self-driven projects, I gained hands-on experience in:
+
+* **Core Logic & Flow Control:** Developing nested loops, conditional branches, and modular functions.
+* **Input Validation & Safety:** Handling edge cases, division by zero, and authentication checks.
+* **State Management:** Tracking dynamic variables across game paths, such as oxygen depletion in game design.
+* **Terminal UI Enhancements:** Implementing custom formatting, text animations, progress bars, and user-friendly menu layouts.
