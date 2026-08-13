@@ -12,13 +12,13 @@ Welcome! This repository is a curated collection of self-initiated Python projec
 
 Below is an overview of all individual projects contained within this directory:
 
-| Folder Name | Project Title | Description | Key Topics / Tech |
+| File Name | Project Title | Description | Key Topics / Tech |
 | :--- | :--- | :--- | :--- |
-| `📂 Basic Calculator/` | **[Simple Calculator](./basic-calculator)** | A CLI calculator supporting standard math operations with safe error handling[cite: 1]. | Conditional Logic, User Input Parsing, Zero-Division Checks |
-| `📂 Project Icarus/` | **[Project: Icarus](./project-icarus)** | A deep-space survival text RPG featuring resource management and interactive logic riddles. | State Management, Game Loops, Logic Puzzles, Control Flow |
-| `📂 Password Manager/` | **[Password Manager](./password-manager)** | A local credential vault for storing, retrieving, editing, and deleting accounts under admin security[cite: 3]. | Data Structures (Lists/Dicts), Auth Flow, Security Masking (`getpass`) |
-| `📂 Student Marks Calculator/` | **[Marks & Report Calculator](./student-marks-calculator)** | An academic performance analyzer generating total marks, CGPA, grades, and terminal progress visuals[cite: 4]. | Loops, Array Processing, Animated Output, Grade Formatting |
-| `📂 Tally Count/` | **[Tally Counter](./tally-count)** | An interactive CLI utility designed for real-time item tracking and count state management[cite: 5]. | State Tracking, Program Loops, Interactive Menus |
+| `📄 Basic_Calculator.py` | **[Simple Calculator](./Basic_Calculator.py)** | A CLI calculator supporting standard math operations with safe error handling[cite: 1]. | Conditional Logic, User Input Parsing, Zero-Division Checks |
+| `📄 ICARUS.py` | **[Project: Icarus](./ICARUS.py)** | A deep-space survival text RPG featuring resource management and interactive logic riddles[cite: 2]. | State Management, Game Loops, Logic Puzzles, Control Flow |
+| `📄 Password.py` | **[Password Manager](./Password.py)** | A local credential vault for storing, retrieving, editing, and deleting accounts under admin security[cite: 3]. | Data Structures (Lists/Dicts), Auth Flow, Security Masking (`getpass`) |
+| `📄 student_marks_calculator.py` | **[Marks & Report Calculator](./student_marks_calculator.py)** | An academic performance analyzer generating total marks, CGPA, grades, and terminal progress visuals[cite: 4]. | Loops, Array Processing, Animated Output, Grade Formatting |
+| `📄 Tally Count.py` | **[Tally Counter](./Tally%20Count.py)** | An interactive CLI utility designed for real-time item tracking and count state management[cite: 5]. | State Tracking, Program Loops, Interactive Menus |
 
 ---
 
