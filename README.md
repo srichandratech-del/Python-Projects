@@ -28,7 +28,7 @@ The projects may vary in complexity and purpose, but each one represents a conce
 | # | Project | Description | Technologies / Concepts |
 |---:|---|---|---|
 | 1 | [Basic Calculator](./Basic%20Calculator) | A command-line calculator for performing basic mathematical operations. | Python, Functions, Conditional Logic |
-| 2 | [Password Manager](./Password%20Manager) | A local command-line application for managing account credentials. | Python, Dictionaries, Authentication, `getpass` |
+| 2 | [Theorem Verifier](./Theorem%Verifier) | Verifies theorems and calculates common mathematical formulas. | Python, Functions, math, User Input, Conditions |
 | 3 | [Project ICARUS](./Project%20ICARUS) | An interactive deep-space survival text-based RPG. | Python, Game Logic, State Management |
 | 4 | [Student Marks Calculator](./Student%20Marks%20Calculator) | A program for calculating and analyzing student academic performance. | Python, Loops, Functions, Data Processing |
 | 5 | [Tally Counter](./Tally%20Counter) | A simple interactive utility for tracking and updating counts. | Python, Loops, State Management |
@@ -115,7 +115,7 @@ Individual projects may contain additional instructions where required.
 Python-Projects/
 │
 ├── Basic Calculator/
-├── Password Manager/
+├── Theorem Verifier/
 ├── Project ICARUS/
 ├── Student Marks Calculator/
 ├── Tally Counter/
