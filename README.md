@@ -206,7 +206,7 @@ Mo Tu We Th Fr Sa Su
 25 26 27 28 29 30 31
 ```
 
-📁 [View Project →](./Calendar%20Program)
+📁 [View Project →](./Calendar)
 
 ---
 
