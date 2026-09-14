@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Projects-5-181717?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Projects-6-181717?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 </p>
@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/Text%20Adventure-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Math%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Academic%20Tools-✔-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Calendar%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/More%20Coming%20Soon-🔜-orange?style=flat-square"/>
 </p>
 
@@ -41,6 +42,7 @@ Projects vary in complexity and purpose, but every one represents a real concept
 | 3 | [🚀 Project ICARUS](#-3-project-icarus) | Text Adventure | A deep-space survival RPG with puzzles, riddles, and an oxygen system | Game state, Global vars, `sys` module, Nested logic |
 | 4 | [📊 Student Marks Calculator](#-4-student-marks-calculator) | Academic Tool | Calculates marks, percentage, CGPA, and grade for multiple students | Nested loops, Lists, Progress bar, F-strings |
 | 5 | [🔢 Tally Counter](#-5-tally-counter) | CLI Utility | A simple interactive counter with increment, decrement, and reset | `while` loop, Conditionals, State variable |
+| 6 | [📅 Calendar Program](#-6-calendar-program) | CLI Utility | Prints a formatted monthly calendar for any year and month | `calendar` module, Recursion, `.lower()`, `exit()` |
 | 🔜 | *More coming soon...* | — | New projects will be added as the journey continues | — |
 
 > 📄 Each project has its own detailed `README.md` inside its directory.
@@ -175,6 +177,39 @@ Small in scope but sharp in focus — demonstrating the core **state → input �
 
 ---
 
+### 📅 6. Calendar Program
+
+<p>
+  <img src="https://img.shields.io/badge/Level-Beginner-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-CLI%20Utility-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
+</p>
+
+A clean command-line tool that prints a formatted monthly calendar for any year and month — powered entirely by Python's built-in `calendar` module.
+
+Enter a year and month, view the calendar, then choose to print another or exit — all through a recursive session loop.
+
+**Highlights:**
+- Prints any month of any year on demand
+- Uses `calendar.month()` for instant formatted output
+- Recursive function call keeps the session running without a `while` loop
+- Graceful exit with goodbye message; unexpected input terminates cleanly
+
+**Example Output:**
+```
+   August 2025
+Mo Tu We Th Fr Sa Su
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+```
+
+📁 [View Project →](./Calendar%20Program)
+
+---
+
 ## 🧠 Learning Focus
 
 The projects in this repository develop practical experience across:
@@ -182,22 +217,22 @@ The projects in this repository develop practical experience across:
 <p>
   <img src="https://img.shields.io/badge/Variables%20%26%20Data%20Types-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Loops%20%26%20Control%20Flow-✔-blueviolet?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Functions-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Functions%20%26%20Recursion-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Lists%20%26%20Data%20Structures-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Input%20Validation-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Game%20State%20Management-✔-blueviolet?style=flat-square"/>
-  <img src="https://img.shields.io/badge/math%20%26%20sys%20%26%20time%20Modules-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/math%20%26%20sys%20%26%20time%20%26%20calendar-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/CLI%20Application%20Design-✔-blueviolet?style=flat-square"/>
 </p>
 
 - Python fundamentals — variables, data types, operators
 - Conditional statements — `if / elif / else`
 - Loops and control flow — `while`, `for`, `break`
-- Functions and modular programming
+- Functions, modular programming, and recursion
 - Lists, data structures, and `append` / `sum` / `join`
 - Input handling and validation
 - Global state management across functions
-- Built-in modules — `math`, `time`, `sys`
+- Built-in modules — `math`, `time`, `sys`, `calendar`
 - CLI application design and user experience
 - Problem-solving and algorithmic thinking
 
@@ -276,11 +311,29 @@ Each project directory contains its own `README.md` with full instructions, exam
 │   ├── 📄 Tally_Counter.py
 │   └── 📄 README.md
 │
+├── 📂 Calendar Program/
+│   ├── 📄 Calendar.py
+│   └── 📄 README.md
+│
 ├── 📄 LICENSE
 └── 📄 README.md
 ```
 
 > New projects will be added as separate directories as the journey continues.
+
+---
+
+## 🔮 Future Direction
+
+This repository will keep growing alongside my Python learning. Upcoming projects may explore:
+
+- 🤖 Automation scripts
+- 📁 File and data handling
+- 🗄️ Databases and storage
+- 📈 Algorithms and data structures
+- 🔌 Python for electronics and engineering (ECE focus)
+- 🖥️ GUI applications using Tkinter
+- 🌐 Web-based Python tools
 
 ---
 
