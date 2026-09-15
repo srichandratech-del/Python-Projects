@@ -123,25 +123,8 @@ python QR_Code_Generator.py
 ## 💻 Example Usage
 
 **Generating a QR Code for a URL**
-```
-Welcome to the QR Code Generator!
-You can generate a QR code for any text or URL.
---------------------------------------------------
-Enter the text or URL to generate QR code: https://github.com/srichandratech-del
 
-==================================================
-
-Do you want to save the QR code as an image file? (yes/no): yes
-Enter the filename to save the QR code (without extension): my_github_qr
-QR code saved as my_github_qr.png
-```
-
-**Skipping the Save**
-```
-Do you want to save the QR code as an image file? (yes/no): no
-QR code not saved.
-Thank you for using the QR Code Generator!
-```
+![Project Output](Output.jpg)
 
 ---
 
