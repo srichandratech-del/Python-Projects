@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Projects-6-181717?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Projects-7-181717?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 </p>
@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/Math%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Academic%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Calendar%20Tools-✔-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/QR%20Code%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/More%20Coming%20Soon-🔜-orange?style=flat-square"/>
 </p>
 
@@ -43,6 +44,7 @@ Projects vary in complexity and purpose, but every one represents a real concept
 | 4 | [📊 Student Marks Calculator](#-4-student-marks-calculator) | Academic Tool | Calculates marks, percentage, CGPA, and grade for multiple students | Nested loops, Lists, Progress bar, F-strings |
 | 5 | [🔢 Tally Counter](#-5-tally-counter) | CLI Utility | A simple interactive counter with increment, decrement, and reset | `while` loop, Conditionals, State variable |
 | 6 | [📅 Calendar Program](#-6-calendar-program) | CLI Utility | Prints a formatted monthly calendar for any year and month | `calendar` module, Recursion, `.lower()`, `exit()` |
+| 7 | [🔳 QR Code Generator](#-7-qr-code-generator) | CLI Tool | Generates a QR code for any text or URL and exports it as a PNG | `qrcode`, `Pillow`, OOP, File I/O, `pip` |
 | 🔜 | *More coming soon...* | — | New projects will be added as the journey continues | — |
 
 > 📄 Each project has its own detailed `README.md` inside its directory.
@@ -206,7 +208,30 @@ Mo Tu We Th Fr Sa Su
 25 26 27 28 29 30 31
 ```
 
-📁 [View Project →](./Calendar)
+📁 [View Project →](./Calendar%20Program)
+
+---
+
+### 🔳 7. QR Code Generator
+
+<p>
+  <img src="https://img.shields.io/badge/Level-Beginner-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-CLI%20Tool-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
+  <img src="https://img.shields.io/badge/External%20Package-qrcode-red?style=flat-square"/>
+</p>
+
+A command-line tool that converts any **text or URL** into a QR code and optionally saves it as a **PNG image file** — the first project in this repository to use an external Python package.
+
+**Highlights:**
+- Generates a QR code for any text or URL
+- Saves output as a named `.png` with custom black-and-white colours
+- First project using `pip` and a third-party library (`qrcode` + `Pillow`)
+- Introduces object-oriented usage — instantiating a class and calling its methods
+
+> ⚠️ **Requires external packages:** `pip install qrcode[pil]`
+
+📁 [View Project →](./QR%20Code%20Generator)
 
 ---
 
@@ -221,7 +246,8 @@ The projects in this repository develop practical experience across:
   <img src="https://img.shields.io/badge/Lists%20%26%20Data%20Structures-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Input%20Validation-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Game%20State%20Management-✔-blueviolet?style=flat-square"/>
-  <img src="https://img.shields.io/badge/math%20%26%20sys%20%26%20time%20%26%20calendar-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Built--in%20%26%20External%20Modules-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/File%20I%2FO-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/CLI%20Application%20Design-✔-blueviolet?style=flat-square"/>
 </p>
 
@@ -233,6 +259,8 @@ The projects in this repository develop practical experience across:
 - Input handling and validation
 - Global state management across functions
 - Built-in modules — `math`, `time`, `sys`, `calendar`
+- External packages — `qrcode`, `Pillow` via `pip`
+- File I/O — saving generated output to disk
 - CLI application design and user experience
 - Problem-solving and algorithmic thinking
 
@@ -259,7 +287,8 @@ Python 3.x
 Git
 ```
 
-> ✅ No external dependencies required for any current project — all use Python's built-in modules only.
+> ✅ Projects 1–6 use Python's built-in modules only — no extra installation needed.  
+> ⚠️ **Project 7 (QR Code Generator)** requires an external package — see below.
 
 ### Clone the Repository
 
@@ -280,6 +309,14 @@ Navigate to the project folder and run its Python file:
 ```bash
 cd "Basic Calculator"
 python Basic_Calculator.py
+```
+
+### QR Code Generator — Extra Step
+
+```bash
+cd "QR Code Generator"
+pip install qrcode[pil]
+python QR_Code_Generator.py
 ```
 
 Each project directory contains its own `README.md` with full instructions, examples, and notes.
@@ -313,6 +350,10 @@ Each project directory contains its own `README.md` with full instructions, exam
 │
 ├── 📂 Calendar Program/
 │   ├── 📄 Calendar.py
+│   └── 📄 README.md
+│
+├── 📂 QR Code Generator/
+│   ├── 📄 QR_Code_Generator.py
 │   └── 📄 README.md
 │
 ├── 📄 LICENSE
