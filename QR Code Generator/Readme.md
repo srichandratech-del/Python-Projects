@@ -11,7 +11,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/qrcode-library-8B0000?style=flat-square&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Pillow-required-blueviolet?style=flat-square&logo=python"/>
-  <img src="https://img.shields.io/badge/ASCII%20Preview-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/PNG%20Export-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/External%20Package-qrcode-red?style=flat-square"/>
 </p>
@@ -20,7 +19,7 @@
 
 ## 🧾 Overview
 
-**QR Code Generator** is a Python command-line tool that converts any **text or URL** into a QR code — previewed instantly as ASCII art in the terminal and optionally saved as a **PNG image file**.
+**QR Code Generator** is a Python command-line tool that converts any **text or URL** into a QR code and optionally saved as a **PNG image file**.
 
 This is the first project in the repository to use an **external Python package** (`qrcode`), marking a step forward in the learning journey from pure built-in Python into the wider Python ecosystem.
 
@@ -31,7 +30,6 @@ This is the first project in the repository to use an **external Python package*
 | Feature | Description |
 |---------|-------------|
 | 🔗 **Any Text or URL** | Generate a QR code for any string — links, plain text, contact info, anything |
-| 🖥️ **Live ASCII Preview** | Instantly renders the QR code as ASCII art directly in the terminal |
 | 💾 **PNG Export** | Optionally saves the QR code as a named `.png` image file |
 | 🎨 **Black & White Image** | Clean black-on-white PNG output ready for print or digital use |
 | ⚙️ **Configurable** | `box_size` and `border` control QR code scale and quiet zone |
@@ -54,7 +52,7 @@ This is the first project in the repository to use an **external Python package*
 - **External Packages** — first project using a third-party library (`qrcode`) installed via `pip`
 - **`pip` & Dependencies** — installing and importing packages outside Python's standard library
 - **Object Instantiation** — creating a `qrcode.QRCode` object with custom parameters
-- **Method Calls** — using `.add_data()`, `.make()`, `.print_ascii()`, `.make_image()`, `.save()`
+- **Method Calls** — using `.add_data()`, `.make()`, `.make_image()`, `.save()`
 - **File I/O** — saving a generated image to disk with a user-defined filename
 - **F-strings** — dynamically building the output filename string
 - **Conditional Statements** — routing the save/skip decision with `if / elif / else`
@@ -89,7 +87,7 @@ pip install qrcode[pil]
 │
 ├── 📄 QR_Code_Generator.py     # Main program file
 ├── 📄 README.md                # Project documentation
-└── 📄 *.png                    # QR code images saved by 
+└── 📄 *.png                    # QR code images saved by the user (optional)
 ```
 
 ---
@@ -125,8 +123,25 @@ python QR_Code_Generator.py
 ## 💻 Example Usage
 
 **Generating a QR Code for a URL**
+```
+Welcome to the QR Code Generator!
+You can generate a QR code for any text or URL.
+--------------------------------------------------
+Enter the text or URL to generate QR code: https://github.com/srichandratech-del
 
-<img src="Output.jpg" alt="Project Output" width="100%">
+==================================================
+
+Do you want to save the QR code as an image file? (yes/no): yes
+Enter the filename to save the QR code (without extension): my_github_qr
+QR code saved as my_github_qr.png
+```
+
+**Skipping the Save**
+```
+Do you want to save the QR code as an image file? (yes/no): no
+QR code not saved.
+Thank you for using the QR Code Generator!
+```
 
 ---
 
