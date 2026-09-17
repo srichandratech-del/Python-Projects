@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Projects-7-181717?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Projects-9-181717?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 </p>
@@ -14,6 +14,8 @@
   <img src="https://img.shields.io/badge/Academic%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Calendar%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/QR%20Code%20Tools-✔-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Password%20Tools-✔-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Streaming%20Apps-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/More%20Coming%20Soon-🔜-orange?style=flat-square"/>
 </p>
 
@@ -45,6 +47,8 @@ Projects vary in complexity and purpose, but every one represents a real concept
 | 5 | [🔢 Tally Counter](#-5-tally-counter) | CLI Utility | A simple interactive counter with increment, decrement, and reset | `while` loop, Conditionals, State variable |
 | 6 | [📅 Calendar Program](#-6-calendar-program) | CLI Utility | Prints a formatted monthly calendar for any year and month | `calendar` module, Recursion, `.lower()`, `exit()` |
 | 7 | [🔳 QR Code Generator](#-7-qr-code-generator) | CLI Tool | Generates a QR code for any text or URL and exports it as a PNG | `qrcode`, `Pillow`, OOP, File I/O, `pip` |
+| 8 | [🔐 Password Generator](#-8-password-generator) | CLI Tool | Generates a secure random password of any length from a full character set | `random`, `try/except`, Recursion, String ops |
+| 9 | [🎬 StreamFlix Clone](#-9-streamflix-clone) | CLI App | A streaming service simulation with sign up, login, and subscription plans | Nested dicts, Lists of dicts, `datetime`, Data modelling |
 | 🔜 | *More coming soon...* | — | New projects will be added as the journey continues | — |
 
 > 📄 Each project has its own detailed `README.md` inside its directory.
@@ -235,6 +239,57 @@ A command-line tool that converts any **text or URL** into a QR code and optiona
 
 ---
 
+### 🔐 8. Password Generator
+
+<p>
+  <img src="https://img.shields.io/badge/Level-Beginner-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-CLI%20Tool-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
+</p>
+
+A secure random password generator that builds passwords from a full **88-character pool** — lowercase, uppercase, digits, and symbols — at any length the user specifies.
+
+Features `try/except` error handling for the first time in this repository, and uses `random.sample()` to ensure no character repeats within a single password.
+
+**Highlights:**
+- Full character set: `a-z`, `A-Z`, `0-9`, `! @ # $ & /`
+- `random.sample()` guarantees no repeated characters per password
+- First use of `try / except ValueError` for robust input validation
+- Recursive session loop — generate back-to-back passwords without restarting
+
+📁 [View Project →](./Password%20Generator)
+
+---
+
+### 🎬 9. StreamFlix Clone
+
+<p>
+  <img src="https://img.shields.io/badge/Level-Intermediate-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-CLI%20App-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
+</p>
+
+A command-line simulation of a streaming subscription service — inspired by Netflix. Users can **sign up** with a plan, **log in** to view their account, and navigate through a persistent session menu.
+
+The most data-driven project in the repository — introducing nested dictionaries, lists of dictionaries as an in-memory user database, and auto-stamped dates at runtime.
+
+**Highlights:**
+- 4 subscription plans: Basic (₹299), Standard (₹499), Premium (₹699), Family (₹999)
+- Sign-up stores a full user record including plan, payment method, and start date
+- Login searches the user list by name with case-insensitive matching
+- `datetime.date.today()` auto-stamps the subscription start date
+
+| Plan | Price | Devices |
+|------|-------|---------|
+| Basic | ₹299 | 1 |
+| Standard | ₹499 | 2 |
+| Premium | ₹699 | 3 |
+| Family | ₹999 | 5 |
+
+📁 [View Project →](./StreamFlix)
+
+---
+
 ## 🧠 Learning Focus
 
 The projects in this repository develop practical experience across:
@@ -243,11 +298,13 @@ The projects in this repository develop practical experience across:
   <img src="https://img.shields.io/badge/Variables%20%26%20Data%20Types-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Loops%20%26%20Control%20Flow-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Functions%20%26%20Recursion-✔-blueviolet?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Lists%20%26%20Data%20Structures-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Dictionaries%20%26%20Data%20Structures-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/try%2Fexcept%20Error%20Handling-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Input%20Validation-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Game%20State%20Management-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Built--in%20%26%20External%20Modules-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/File%20I%2FO-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Data%20Modelling-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/CLI%20Application%20Design-✔-blueviolet?style=flat-square"/>
 </p>
 
@@ -255,12 +312,14 @@ The projects in this repository develop practical experience across:
 - Conditional statements — `if / elif / else`
 - Loops and control flow — `while`, `for`, `break`
 - Functions, modular programming, and recursion
-- Lists, data structures, and `append` / `sum` / `join`
+- Lists, dictionaries, and nested data structures
+- `try / except` — exception and error handling
 - Input handling and validation
 - Global state management across functions
-- Built-in modules — `math`, `time`, `sys`, `calendar`
+- Built-in modules — `math`, `time`, `sys`, `calendar`, `random`, `datetime`
 - External packages — `qrcode`, `Pillow` via `pip`
 - File I/O — saving generated output to disk
+- Data modelling — structuring real-world entities as Python data structures
 - CLI application design and user experience
 - Problem-solving and algorithmic thinking
 
@@ -287,7 +346,7 @@ Python 3.x
 Git
 ```
 
-> ✅ Projects 1–6 use Python's built-in modules only — no extra installation needed.  
+> ✅ Projects 1–6, 8, 9 use Python's built-in modules only — no extra installation needed.  
 > ⚠️ **Project 7 (QR Code Generator)** requires an external package — see below.
 
 ### Clone the Repository
@@ -354,6 +413,14 @@ Each project directory contains its own `README.md` with full instructions, exam
 │
 ├── 📂 QR Code Generator/
 │   ├── 📄 QR_Code_Generator.py
+│   └── 📄 README.md
+│
+├── 📂 Password Generator/
+│   ├── 📄 Password_Generator.py
+│   └── 📄 README.md
+│
+├── 📂 StreamFlix Clone/
+│   ├── 📄 StreamFlix.py
 │   └── 📄 README.md
 │
 ├── 📄 LICENSE
