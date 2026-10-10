@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Projects-9-181717?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Projects-11-181717?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 </p>
@@ -16,6 +16,8 @@
   <img src="https://img.shields.io/badge/QR%20Code%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Password%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Streaming%20Apps-✔-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/OTP%20Systems-✔-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Statistics%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/More%20Coming%20Soon-🔜-orange?style=flat-square"/>
 </p>
 
@@ -49,6 +51,8 @@ Projects vary in complexity and purpose, but every one represents a real concept
 | 7 | [🔳 QR Code Generator](#-7-qr-code-generator) | CLI Tool | Generates a QR code for any text or URL and exports it as a PNG | `qrcode`, `Pillow`, OOP, File I/O, `pip` |
 | 8 | [🔐 Password Generator](#-8-password-generator) | CLI Tool | Generates a secure random password of any length from a full character set | `random`, `try/except`, Recursion, String ops |
 | 9 | [🎬 StreamFlix Clone](#-9-streamflix-clone) | CLI App | A streaming service simulation with sign up, login, and subscription plans | Nested dicts, Lists of dicts, `datetime`, Data modelling |
+| 10 | [🔑 OTP System](#-10-otp-system) | CLI Tool | A two-file OTP generation and verification system with attempt limiting | File I/O, `with` statement, Cross-file import, `random` |
+| 11 | [📈 Statistics Calculator](#-11-statistics-calculator) | CLI Tool | Calculates Mean, Median, and Mode from frequency distribution data | Parallel lists, Cumulative frequency, `max()`, `.index()` |
 | 🔜 | *More coming soon...* | — | New projects will be added as the journey continues | — |
 
 > 📄 Each project has its own detailed `README.md` inside its directory.
@@ -67,9 +71,7 @@ Projects vary in complexity and purpose, but every one represents a real concept
   <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
 </p>
 
-A command-line calculator that performs **Addition, Subtraction, Multiplication, and Division** between two numbers.
-
-Accepts multiple input formats per operation — full name (`Addition`), short name (`Add`), or symbol (`+`). Includes a division-by-zero guard.
+A command-line calculator that performs **Addition, Subtraction, Multiplication, and Division** between two numbers. Accepts multiple input formats per operation — full name (`Addition`), short name (`Add`), or symbol (`+`). Includes a division-by-zero guard.
 
 **Highlights:**
 - Multi-format operator input (`Add` / `add` / `+`)
@@ -88,9 +90,7 @@ Accepts multiple input formats per operation — full name (`Addition`), short n
   <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
 </p>
 
-An interactive theorem verification and formula calculation tool supporting **10 mathematical functions** — from Pythagoras to Heron's Formula and Vector Magnitude.
-
-Driven by a numbered menu, each function is cleanly isolated into its own Python function.
+An interactive theorem verification and formula calculation tool supporting **10 mathematical functions** — from Pythagoras to Heron's Formula and Vector Magnitude. Each function is cleanly isolated into its own Python function.
 
 **Highlights:**
 - 10 theorems and formulas in one tool
@@ -110,8 +110,6 @@ Driven by a numbered menu, each function is cleanly isolated into its own Python
 </p>
 
 A full text-based survival RPG set aboard a failing deep-space vessel. Navigate **5 interconnected regions**, solve riddles, crack codes, manage a draining oxygen meter, and defeat a rogue AI mainframe.
-
-The most ambitious project in the repository — featuring global state management, condition-gated navigation, attempt-based puzzles, and a full restart-on-death system.
 
 **Highlights:**
 - Live oxygen stat that drains with every mistake
@@ -141,7 +139,7 @@ The most ambitious project in the repository — featuring global state manageme
   <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
 </p>
 
-A report generator that collects marks for multiple students across any number of subjects and produces a formatted academic report — with **Total Marks, Percentage, CGPA, and Grade** — all inside an animated progress bar reveal.
+A report generator that collects marks for multiple students across any number of subjects and produces a formatted academic report — with **Total Marks, Percentage, CGPA, and Grade** — inside an animated progress bar reveal.
 
 **Highlights:**
 - Supports multiple students, each with different subject counts
@@ -170,9 +168,7 @@ A report generator that collects marks for multiple students across any number o
   <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
 </p>
 
-A minimal interactive counter that simulates a physical tally clicker — increment, decrement, reset, and exit through a simple persistent menu loop.
-
-Small in scope but sharp in focus — demonstrating the core **state → input → update → display** loop at the heart of every interactive program.
+A minimal interactive counter that simulates a physical tally clicker — increment, decrement, reset, and exit through a simple persistent menu loop. Demonstrates the core **state → input → update → display** loop at the heart of every interactive program.
 
 **Highlights:**
 - Live count display after every action
@@ -191,15 +187,13 @@ Small in scope but sharp in focus — demonstrating the core **state → input �
   <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
 </p>
 
-A clean command-line tool that prints a formatted monthly calendar for any year and month — powered entirely by Python's built-in `calendar` module.
-
-Enter a year and month, view the calendar, then choose to print another or exit — all through a recursive session loop.
+A clean command-line tool that prints a formatted monthly calendar for any year and month — powered entirely by Python's built-in `calendar` module, with a recursive session loop.
 
 **Highlights:**
 - Prints any month of any year on demand
 - Uses `calendar.month()` for instant formatted output
 - Recursive function call keeps the session running without a `while` loop
-- Graceful exit with goodbye message; unexpected input terminates cleanly
+- Graceful exit with goodbye message
 
 **Example Output:**
 ```
@@ -249,8 +243,6 @@ A command-line tool that converts any **text or URL** into a QR code and optiona
 
 A secure random password generator that builds passwords from a full **88-character pool** — lowercase, uppercase, digits, and symbols — at any length the user specifies.
 
-Features `try/except` error handling for the first time in this repository, and uses `random.sample()` to ensure no character repeats within a single password.
-
 **Highlights:**
 - Full character set: `a-z`, `A-Z`, `0-9`, `! @ # $ & /`
 - `random.sample()` guarantees no repeated characters per password
@@ -271,8 +263,6 @@ Features `try/except` error handling for the first time in this repository, and 
 
 A command-line simulation of a streaming subscription service — inspired by Netflix. Users can **sign up** with a plan, **log in** to view their account, and navigate through a persistent session menu.
 
-The most data-driven project in the repository — introducing nested dictionaries, lists of dictionaries as an in-memory user database, and auto-stamped dates at runtime.
-
 **Highlights:**
 - 4 subscription plans: Basic (₹299), Standard (₹499), Premium (₹699), Family (₹999)
 - Sign-up stores a full user record including plan, payment method, and start date
@@ -286,7 +276,58 @@ The most data-driven project in the repository — introducing nested dictionari
 | Premium | ₹699 | 3 |
 | Family | ₹999 | 5 |
 
-📁 [View Project →](./StreamFlix)
+📁 [View Project →](./StreamFlix%20Clone)
+
+---
+
+### 🔑 10. OTP System
+
+<p>
+  <img src="https://img.shields.io/badge/Level-Intermediate-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-CLI%20Tool-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Two--File%20Project-✔-blueviolet?style=flat-square"/>
+</p>
+
+A two-file Python system that simulates a real **One-Time Password (OTP) authentication flow** — the same mechanism used in banking apps and 2FA services. The generator creates a 5-digit OTP saved to a shared file; the verifier reads it and challenges the user within **3 attempts**.
+
+**Highlights:**
+- `OTP_Generator.py` writes a random 5-digit OTP to `otp.txt`
+- `OTP_Verifier.py` reads the file, runs a 3-attempt verification loop
+- Cross-file import — verifier dynamically imports the generator for regeneration
+- First project spanning two scripts communicating via a shared file
+
+```
+OTP_Generator.py  ──writes──►  otp.txt  ──reads──►  OTP_Verifier.py
+```
+
+📁 [View Project →](./OTP%20Generator%20and%20Verifier)
+
+---
+
+### 📈 11. Statistics Calculator
+
+<p>
+  <img src="https://img.shields.io/badge/Level-Intermediate-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-CLI%20Tool-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
+</p>
+
+A command-line statistics tool that computes **Mean, Median, and Mode** from frequency distribution data — working with paired `x` values and frequencies rather than raw lists, matching the standard academic format.
+
+**Highlights:**
+- Mean via `Σ(x × f) / Σf`, Median via cumulative frequency, Mode via `max(f)`
+- Validates mismatched and empty list inputs before any calculation runs
+- Cumulative frequency built and displayed alongside the Median result
+- Persistent menu — run multiple calculations per session
+
+| Measure | Formula |
+|---------|---------|
+| Mean | `Σ(x × f) / Σf` |
+| Median | Value at `N/2` in cumulative frequency |
+| Mode | `x` where frequency is highest |
+
+📁 [View Project →](./Statistics%20Calculator)
 
 ---
 
@@ -304,6 +345,8 @@ The projects in this repository develop practical experience across:
   <img src="https://img.shields.io/badge/Game%20State%20Management-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Built--in%20%26%20External%20Modules-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/File%20I%2FO-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Cross--File%20Imports-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Statistical%20Algorithms-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Data%20Modelling-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/CLI%20Application%20Design-✔-blueviolet?style=flat-square"/>
 </p>
@@ -318,7 +361,9 @@ The projects in this repository develop practical experience across:
 - Global state management across functions
 - Built-in modules — `math`, `time`, `sys`, `calendar`, `random`, `datetime`
 - External packages — `qrcode`, `Pillow` via `pip`
-- File I/O — saving generated output to disk
+- File I/O — reading and writing files with the `with` statement
+- Cross-file imports — one script importing and calling another at runtime
+- Statistical algorithms — mean, median, mode, cumulative frequency
 - Data modelling — structuring real-world entities as Python data structures
 - CLI application design and user experience
 - Problem-solving and algorithmic thinking
@@ -346,7 +391,7 @@ Python 3.x
 Git
 ```
 
-> ✅ Projects 1–6, 8, 9 use Python's built-in modules only — no extra installation needed.  
+> ✅ Projects 1–6, 8–11 use Python's built-in modules only — no extra installation needed.  
 > ⚠️ **Project 7 (QR Code Generator)** requires an external package — see below.
 
 ### Clone the Repository
@@ -378,7 +423,14 @@ pip install qrcode[pil]
 python QR_Code_Generator.py
 ```
 
-Each project directory contains its own `README.md` with full instructions, examples, and notes.
+### OTP System — Run Order
+
+```bash
+cd "OTP System"
+python OTP_Verifier.py
+```
+
+> The verifier triggers the generator automatically. Each project directory contains its own `README.md` with full instructions.
 
 ---
 
@@ -423,11 +475,19 @@ Each project directory contains its own `README.md` with full instructions, exam
 │   ├── 📄 StreamFlix.py
 │   └── 📄 README.md
 │
+├── 📂 OTP System/
+│   ├── 📄 OTP_Generator.py
+│   ├── 📄 OTP_Verifier.py
+│   ├── 📄 otp.txt              ← created at runtime
+│   └── 📄 README.md
+│
+├── 📂 Statistics Calculator/
+│   ├── 📄 Statistics_Calculator.py
+│   └── 📄 README.md
+│
 ├── 📄 LICENSE
 └── 📄 README.md
 ```
-
-> New projects will be added as separate directories as the journey continues.
 
 ---
 
