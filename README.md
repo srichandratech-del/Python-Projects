@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Projects-11-181717?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Projects-12-181717?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 </p>
@@ -18,6 +18,7 @@
   <img src="https://img.shields.io/badge/Streaming%20Apps-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/OTP%20Systems-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Statistics%20Tools-✔-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Billing%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/More%20Coming%20Soon-🔜-orange?style=flat-square"/>
 </p>
 
@@ -53,6 +54,7 @@ Projects vary in complexity and purpose, but every one represents a real concept
 | 9 | [🎬 StreamFlix Clone](#-9-streamflix-clone) | CLI App | A streaming service simulation with sign up, login, and subscription plans | Nested dicts, Lists of dicts, `datetime`, Data modelling |
 | 10 | [🔑 OTP System](#-10-otp-system) | CLI Tool | A two-file OTP generation and verification system with attempt limiting | File I/O, `with` statement, Cross-file import, `random` |
 | 11 | [📈 Statistics Calculator](#-11-statistics-calculator) | CLI Tool | Calculates Mean, Median, and Mode from frequency distribution data | Parallel lists, Cumulative frequency, `max()`, `.index()` |
+| 12 | [🧾 Bill Generator](#-12-bill-generator) | CLI Tool | Generates itemised bills with auto-incrementing IDs persisted across sessions | Dicts, File I/O, Persistent state, `:.2f` formatting |
 | 🔜 | *More coming soon...* | — | New projects will be added as the journey continues | — |
 
 > 📄 Each project has its own detailed `README.md` inside its directory.
@@ -301,7 +303,7 @@ A two-file Python system that simulates a real **One-Time Password (OTP) authent
 OTP_Generator.py  ──writes──►  otp.txt  ──reads──►  OTP_Verifier.py
 ```
 
-📁 [View Project →](./OTP%20Generator%20and%20Verifier)
+📁 [View Project →](./OTP%20System)
 
 ---
 
@@ -331,6 +333,31 @@ A command-line statistics tool that computes **Mean, Median, and Mode** from fre
 
 ---
 
+### 🧾 12. Bill Generator
+
+<p>
+  <img src="https://img.shields.io/badge/Level-Intermediate-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-CLI%20Tool-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
+</p>
+
+A command-line billing tool that builds a dynamic order cart and prints a clean, itemised bill — with a **persistent auto-incrementing Bill ID** stored in `ID.txt` that survives across program restarts, simulating how real invoice systems track order numbers.
+
+**Highlights:**
+- Add any number of items with individual quantities and unit prices
+- Bill ID auto-increments on every run and persists via `ID.txt`
+- Per-item subtotal (`qty × price`) and grand total calculated automatically
+- Cart stored as a dictionary — each item holds its own `quantity` and `price`
+
+> ⚠️ **First-time setup:** create `ID.txt` in the project folder with `0` inside before first run.
+> ```bash
+> echo 0 > ID.txt
+> ```
+
+📁 [View Project →](./Bill%20Generator)
+
+---
+
 ## 🧠 Learning Focus
 
 The projects in this repository develop practical experience across:
@@ -344,7 +371,7 @@ The projects in this repository develop practical experience across:
   <img src="https://img.shields.io/badge/Input%20Validation-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Game%20State%20Management-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Built--in%20%26%20External%20Modules-✔-blueviolet?style=flat-square"/>
-  <img src="https://img.shields.io/badge/File%20I%2FO-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/File%20I%2FO%20%26%20Persistent%20State-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Cross--File%20Imports-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Statistical%20Algorithms-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Data%20Modelling-✔-blueviolet?style=flat-square"/>
@@ -361,7 +388,7 @@ The projects in this repository develop practical experience across:
 - Global state management across functions
 - Built-in modules — `math`, `time`, `sys`, `calendar`, `random`, `datetime`
 - External packages — `qrcode`, `Pillow` via `pip`
-- File I/O — reading and writing files with the `with` statement
+- File I/O — reading, writing, and persistent state via text files
 - Cross-file imports — one script importing and calling another at runtime
 - Statistical algorithms — mean, median, mode, cumulative frequency
 - Data modelling — structuring real-world entities as Python data structures
@@ -392,7 +419,8 @@ Git
 ```
 
 > ✅ Projects 1–6, 8–11 use Python's built-in modules only — no extra installation needed.  
-> ⚠️ **Project 7 (QR Code Generator)** requires an external package — see below.
+> ⚠️ **Project 7 (QR Code Generator)** requires an external package — see below.  
+> ⚠️ **Project 12 (Bill Generator)** requires a one-time `ID.txt` setup — see below.
 
 ### Clone the Repository
 
@@ -407,8 +435,6 @@ cd Python-Projects
 ```
 
 ### Run a Project
-
-Navigate to the project folder and run its Python file:
 
 ```bash
 cd "Basic Calculator"
@@ -430,7 +456,15 @@ cd "OTP System"
 python OTP_Verifier.py
 ```
 
-> The verifier triggers the generator automatically. Each project directory contains its own `README.md` with full instructions.
+### Bill Generator — First-Time Setup
+
+```bash
+cd "Bill Generator"
+echo 0 > ID.txt
+python Bill_Generator.py
+```
+
+> Each project directory contains its own `README.md` with full instructions.
 
 ---
 
@@ -483,6 +517,11 @@ python OTP_Verifier.py
 │
 ├── 📂 Statistics Calculator/
 │   ├── 📄 Statistics_Calculator.py
+│   └── 📄 README.md
+│
+├── 📂 Bill Generator/
+│   ├── 📄 Bill_Generator.py
+│   ├── 📄 ID.txt               ← create with 0 before first run
 │   └── 📄 README.md
 │
 ├── 📄 LICENSE
