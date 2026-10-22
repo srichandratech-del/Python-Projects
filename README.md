@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Projects-12-181717?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Projects-13-181717?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 </p>
@@ -19,6 +19,7 @@
   <img src="https://img.shields.io/badge/OTP%20Systems-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Statistics%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Billing%20Tools-✔-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Finance%20Tools-✔-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/More%20Coming%20Soon-🔜-orange?style=flat-square"/>
 </p>
 
@@ -55,6 +56,7 @@ Projects vary in complexity and purpose, but every one represents a real concept
 | 10 | [🔑 OTP System](#-10-otp-system) | CLI Tool | A two-file OTP generation and verification system with attempt limiting | File I/O, `with` statement, Cross-file import, `random` |
 | 11 | [📈 Statistics Calculator](#-11-statistics-calculator) | CLI Tool | Calculates Mean, Median, and Mode from frequency distribution data | Parallel lists, Cumulative frequency, `max()`, `.index()` |
 | 12 | [🧾 Bill Generator](#-12-bill-generator) | CLI Tool | Generates itemised bills with auto-incrementing IDs persisted across sessions | Dicts, File I/O, Persistent state, `:.2f` formatting |
+| 13 | [💰 Financial Calculator](#-13-financial-calculator) | CLI Tool | Tracks expenses across 7 spending categories with a live running summary | Lists, Dicts, Index-based selection, Float input |
 | 🔜 | *More coming soon...* | — | New projects will be added as the journey continues | — |
 
 > 📄 Each project has its own detailed `README.md` inside its directory.
@@ -358,6 +360,36 @@ A command-line billing tool that builds a dynamic order cart and prints a clean,
 
 ---
 
+### 💰 13. Financial Calculator
+
+<p>
+  <img src="https://img.shields.io/badge/Level-Beginner-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Type-CLI%20Tool-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square"/>
+</p>
+
+A command-line expense tracker that records spending across **7 categories** — Personal, Food, Health, Education, Transportation, Entertainment, and Miscellaneous — storing each entry in a dictionary with a live running summary after every update.
+
+**Highlights:**
+- Menu generated dynamically from a list — adding a new category only requires updating `types[]`
+- `types[choice - 1]` maps 1-based user input directly to the category list
+- `prices{}` dictionary updated live — each selection creates or overwrites a category entry
+- Clean range-based input validation: `if choice >= 1 and choice <= 7`
+
+| Category | # |
+|----------|---|
+| Personal | 1 |
+| Food | 2 |
+| Health | 3 |
+| Education | 4 |
+| Transportation | 5 |
+| Entertainment | 6 |
+| Miscellaneous | 7 |
+
+📁 [View Project →](./Financial%20Calculator)
+
+---
+
 ## 🧠 Learning Focus
 
 The projects in this repository develop practical experience across:
@@ -375,6 +407,7 @@ The projects in this repository develop practical experience across:
   <img src="https://img.shields.io/badge/Cross--File%20Imports-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Statistical%20Algorithms-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/Data%20Modelling-✔-blueviolet?style=flat-square"/>
+  <img src="https://img.shields.io/badge/List--Driven%20Menus-✔-blueviolet?style=flat-square"/>
   <img src="https://img.shields.io/badge/CLI%20Application%20Design-✔-blueviolet?style=flat-square"/>
 </p>
 
@@ -391,6 +424,7 @@ The projects in this repository develop practical experience across:
 - File I/O — reading, writing, and persistent state via text files
 - Cross-file imports — one script importing and calling another at runtime
 - Statistical algorithms — mean, median, mode, cumulative frequency
+- List-driven menus — generating UI dynamically from a list
 - Data modelling — structuring real-world entities as Python data structures
 - CLI application design and user experience
 - Problem-solving and algorithmic thinking
@@ -418,7 +452,7 @@ Python 3.x
 Git
 ```
 
-> ✅ Projects 1–6, 8–11 use Python's built-in modules only — no extra installation needed.  
+> ✅ Projects 1–6, 8–11, 13 use Python's built-in modules only — no extra installation needed.  
 > ⚠️ **Project 7 (QR Code Generator)** requires an external package — see below.  
 > ⚠️ **Project 12 (Bill Generator)** requires a one-time `ID.txt` setup — see below.
 
@@ -522,6 +556,10 @@ python Bill_Generator.py
 ├── 📂 Bill Generator/
 │   ├── 📄 Bill_Generator.py
 │   ├── 📄 ID.txt               ← create with 0 before first run
+│   └── 📄 README.md
+│
+├── 📂 Financial Calculator/
+│   ├── 📄 Financial_Calculator.py
 │   └── 📄 README.md
 │
 ├── 📄 LICENSE
